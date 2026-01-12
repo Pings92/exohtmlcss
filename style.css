@@ -1,0 +1,151 @@
+body {
+  /* background-image: url(images/coffee-bean.png); */
+  background-color: rgba(100, 13, 13, 0.898);
+  background-size: auto;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+.monHeader {
+  display: flex;
+  /* justify-content: space-evenly;
+    text-align: center; */
+    justify-content: space-between;
+    align-items: center;
+}
+.menuPrincipal {
+    justify-content: space-around;
+}
+.logo {
+  width: 100px;
+}
+.link {
+  display: flex;
+  list-style: none;
+  /* gap: 50px; */
+  width: 100%;
+  justify-content: space-between;
+  font-size: 30px;
+}
+.block1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* background-color: blanchedalmond; */
+}
+.picture-block {
+  width: 80%;
+}
+.contenuTextuel{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+    text-decoration-line: underline;
+    color: rgb(85, 2, 2);
+}
+.loginIcon{
+    width: 30px;
+    list-style-type: none;
+}
+
+/* .loginList{
+    display: flex;
+    list-style-type: none;
+    color: rgb(40, 38, 38);
+    flex-direction: column;
+} */
+.loginMenu ul li{
+    position: relative;
+}
+.loginMenu ul ul{
+    position: absolute;
+    top: 1em;
+    left: 0;
+    display: none;
+}
+.loginMenu ul > li:hover ul{
+    position: block;
+}
+.fullPage{
+    width: 100%;
+    height: auto;
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: cornsilk;
+}
+.fullPageImage{
+    width: 100%;
+
+}
+.fullPage p{
+    font-size: 20px;
+
+}
+
+.logoCoffee{
+    width: 15px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.footer-links {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.copyright{
+    text-align: center;
+    margin-top: 20px;
+    border-top: solid 2px black ;
+}
+
+.social-media{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+fieldset{
+    background-color: blanchedalmond;
+}
+
+.hover-reveal-coffee::after {
+    content:'$​';
+    opacity: 0;
+    margin: -3px;
+    transition: 2s;
+}
+
+.hover-reveal-coffee:hover::after {
+    opacity: 1;
+    margin-right: 0px;
+}
+
+/* .hover-reveal-tea:hover{
+    color: brown;
+    background-color: blueviolet;
+} */

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+
+    <header>
+      <div class="monHeader">
+        <div>
+          <img
+            class="logo"
+            src="../images/coffee-bean.png"
+            alt="Cerveau en pleine réflexion"
+          />
+        </div>
+
+        <div>
+          <nav class="menuPrincipal">
+            <ul class="link">
+              <li><a href="#">Café</a></li>
+              <li><a href="#">Thé et Maté</a></li>
+              <li><a href="#">Boisson énergisante</a></li>
+              <li><a href="links/apropos.html">A propos</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="hoverLoginMenu">
+              <img
+                class="loginIcon"
+                src="../images/login.png"
+                alt="Icone de login"
+              />
+              <!-- <ul class="loginList">
+                <li>Se connecter</li>
+                <li>Créer un compte</li>
+                <li>Mot de passe oublié</li>
+              </ul> -->
+        </div>
+      </div>
+    </header>
+    <h1>A propos</h1>
+    <h2>Decouvrez notre univers</h2>
+    <p>
+      <iframe
+        width="50%"
+        height="50%"
+        src="https://www.youtube.com/watch?v=OO2kPK5-qno"
+        controls
+      ></iframe>
+    </p>
+    <main>
+      <!-- Questionnaire/ Sondage café-->
+      <section>
+        <p>Quel buveur de café êtes-vous?</p>
+
+        <fieldset>
+            <form action="" method="get">
+            <p>Vous êtes?</p>
+            <!-- radio pour homme femme autre-->
+            <input type="radio" name="sexe" value="homme" id="homme" />
+            <label for="homme">Un homme</label><br />
+            <input type="radio" name="sexe" value="femme" id="femme" />
+            <label for="femme">Une femme</label><br />
+            <input type="radio" name="sexe" value="autre" id="autre" />
+            <label for="autre">Autre</label><br />
+            </form>
+        </fieldset>
+            <fieldset>  <!-- radio pour nombre de café par jour-->
+                <form action="" method="get">
+                    <p>Combien de café buvez vous par jour?</p>
+                    <input type="radio" name="nbrCoffee" value="0" id="none" />
+                    <label for="homme">Aucun</label><br />
+                    <input type="radio" name="nbrCoffee" value="1" id="oneCoffee" />
+                    <label for="femme">1</label><br />
+                    <input type="radio" name="nbrCoffee" value="btw1-4" id="btw1-4" />
+                    <label for="">Entre 2 et 4</label><br />
+                    <input type="radio" name="nbrCoffee" value="over4" id="over4" />
+                    <label for="over4">Plus de 4</label><br />
+                </form>
+        </fieldset>
+        <fieldset>  <!-- radio pour nombre de café par jour-->
+                <form action="" method="get">
+                    <p>Quelle taille de café buvez vous?</p>
+                    <input type="checkbox" name="coffeeSize"  id="ristretto" />
+                    <label for="coffeeSize">Ristretto (15-25 ml)</label><br />
+                    <input type="checkbox" name="coffeeSize"  id="espressso" />
+                    <label for="coffeeSize">Espresso (30-50 ml)</label><br />
+                    <input type="checkbox" name="coffeeSize" id="doppio" />
+                    <label for="coffeeSize">Doppio (60-100 ml) </label><br />
+                    <input type="checkbox" name="coffeeSize" id="lungo" />
+                    <label for="coffeeSize">Lungo (60-100 ml)</label><br />
+                </form>
+        </fieldset>
+
+        <fieldset>
+            <form method="get" action=""></form>
+            <p>
+                <label for="Pseudo">Votre pseudo </label>
+                <input type="text" name="pseudo" placeholder="Votre pseudo" size="30" maxlength="20" /    >
+            </p>
+            <p>
+                <label for="commentaire">Autres commentaires</label>
+                <input type="text" name="autresCommentaires" placeholder="Votre commentaires" size="50" maxlength="100" />
+            </p>
+        </fieldset>
+
+        <p><button type="submit">Envoyer</button></p>
+
+      </section>
+    </main>
+  </body>
+</html>
