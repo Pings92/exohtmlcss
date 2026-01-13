@@ -5,15 +5,12 @@ body {
   margin: 20px;
   padding: 20px;
 }
-
-
 .monHeader {
   display: flex;
   /* justify-content: space-evenly;
     text-align: center; */
     justify-content: space-between;
     align-items: center;
-    /* background-color: rgba(96, 197, 24, 0.509); */
 }
 .menuPrincipal {
     justify-content: space-around;
@@ -29,43 +26,10 @@ body {
   justify-content: space-between;
   font-size: 30px;
 }
-.block1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  width: 100%;
-  background-color: blanchedalmond;
-  margin-top: 20px;
-}
-.picture-block {
-  /* width: 80%; */
-  width: auto;
-height: 300px;
-}
-.contenuTextuel{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    width: 50%;
-}
-h1{
-    text-align: center;
-    font-size: 100px;
-    text-decoration-line: underline;
-    color: rgb(85, 2, 2);
-}
 .loginIcon{
     width: 30px;
     list-style-type: none;
 }
-
-/* .loginList{
-    display: flex;
-    list-style-type: none;
-    color: rgb(40, 38, 38);
-    flex-direction: column;
-} */
 .loginMenu ul li{
     position: relative;
 }
@@ -78,36 +42,15 @@ h1{
 .loginMenu ul > li:hover ul{
     position: block;
 }
-.fullPage{
-    width: 100%;
-    height: auto;
-    /* margin-top: 20px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: cornsilk;
-}
-.fullPageImage{
-    width: 100%;
-
-}
-.fullPage p{
-    font-size: 20px;
-
-}
-
 .logoCoffee{
     width: 15px;
     margin-top: 20px;
 }
-
 .footer-content {
     display: flex;
     justify-content: space-between;
  
 }
-
 .footer-links {
     display: flex;
     list-style-type: none;
@@ -119,13 +62,11 @@ h1{
     margin-top: 20px;
     border-top: solid 2px black ;
 }
-
 .social-media{
     list-style-type: none;
     display: flex;
     gap: 20px;
 }
-
 main{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -150,14 +91,54 @@ fieldset{
     margin-right: 0px;
 }
 
-.hover-reveal-tea:hover{
-    color: brown;
-    background-color: blueviolet;
+.largeDisplay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.largeDisplayContent{
+background-color: rgba(255, 248, 220, 0.795);
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+margin: 10px;
+align-items: center;
+text-align:center;
+padding-top: 20px;
+padding-bottom: 10px;
 }
 
-.pageEntiere{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+.largeDisplayContent p{
+    font-size: 18px;
+    width: 70%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.largeDisplayContent img{
+    width: 300px;
+    border-radius: 5px;
+    ;
+}
+
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: rgb(198, 110, 110);
+    color: rgb(16, 16, 16);
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(255, 148, 148);
+    cursor: pointer;
+}
+
+image:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
