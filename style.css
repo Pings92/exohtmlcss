@@ -38,6 +38,17 @@ body {
   background-color: blanchedalmond;
   margin-top: 20px;
 }
+
+.block2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  background-color: blanchedalmond;
+  margin-top: 20px;
+}
+
 .picture-block {
   /* width: 80%; */
   width: auto;
@@ -155,18 +166,17 @@ fieldset{
     background-color: blueviolet;
 }
 
-.pageEntiere{
-    /* display: flex;
+/* .pageEntiere{
+     isplay: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; */
-}
+    justify-content: center; 
+} */
+
 /* ---------------------MENU BURGER----------------- */
 .menu-burger{
-    display: none;  /* fait disparaitre le menu burger */
-
-}
-.menu-burger{
+    display: none; 
+    /* fait disparaitre le menu burger */
     width: 100%;
     height: 100%;
 }
@@ -253,3 +263,84 @@ donc les % et vh, vw, rem et em plutot que px
 */
 
 /* ----------------------- FIN MENU BURGER ----------------*/
+
+
+/*------------------media Query-----------------/
+  /On peut ecrire min-width ou max-width personnellement je prefere le max/
+  /EXEMPLE/
+  /Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px 
+        @media screen and (max-width: 1280px)
+    Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px 
+        @media all and (min-width: 1024px) and (max-width: 1280px)
+    Sur tous types d'écrans orientés verticalement 
+        @media all and (orientation: portrait)
+        REGARDER le overflow : scroll ,pour un texte qui dépasse de sa boite parent*/
+ @media screen and (max-width: 800px) {
+            .monHeader{
+                display: none;
+            }
+            .menu-burger{
+                display: block;
+            }
+            .block1{
+                display: flex;
+                flex-direction: column-reverse;
+                max-width: 70%;
+                margin: auto;
+                padding: auto;
+                /* border: 2px solid black; */
+                margin-bottom: 10px;
+                border-radius: 10px;
+            }
+            .block2{
+               display: flex;
+               flex-direction: column;
+               max-width: 70%;
+               margin: auto;
+               padding: auto;
+               margin-bottom: 10px;
+               border-radius: 10px;
+            }
+            /* .contenuTextuel{
+                font-size: 20px;
+                display: flex;
+                text-align: center;
+            } */
+            .fullPage{
+                display: flex;
+                flex-direction: column;
+                max-width: 70%;
+                margin: auto;
+                padding: auto;
+                text-align: center;
+                border-radius: 10px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .loginIcon{
+                display: none;
+            }
+            /* nav{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            } */
+            .navigation{
+                display: flex;
+                border: 5px solid black;
+                height: 50px;
+                width: 30%;
+            };
+
+            .footer-content{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 20px;
+            }
+            .logoCoffee{
+                display: none;
+            }
+            .copyright{
+                border-top: none;
+            }
+        }

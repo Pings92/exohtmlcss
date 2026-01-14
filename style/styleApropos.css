@@ -142,3 +142,148 @@ image:hover{
     transform: scale(1.1);
     transition: all 0.5s;
 }
+
+/* ---------------------MENU BURGER----------------- */
+.menu-burger{
+    display: none; 
+    /* fait disparaitre le menu burger */
+    width: 100%;
+    height: 100%;
+}
+nav{
+    height: 50px;
+}
+.menu-burger::before, .menu-burger::after{
+    content:"";
+    width: 100%;
+    height: 50%;
+    background-color: #eafbff;
+}
+.menu-burger nav{
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+.navigation{
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 5px; 
+    line-height: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-burger ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 0;
+    overflow: hidden;
+    transition: .4s cubic-bezier(.77, 0,.18,1);
+}
+.menu-burger.active ul{
+    width: 420px;
+    margin-right: 20px;
+} 
+a{
+    color: #888;
+    text-decoration: none;
+    transition: .3s;
+}
+a:hover{
+    color: #3c9dfb;
+}
+.basculant{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 48px;
+    padding: 14px 5px;
+    cursor: pointer;
+}
+.menuBurger:not(.active) .nav-toogler{
+    margin-left: -10px;
+}
+.basculant::before, .basculant::after{
+    content:"";
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #3c9dfb;
+    transition: .4s cubic-bezier(.77, 0,.18,1);
+}
+.basculant::after{
+    margin-top: 10px;
+}
+
+.menuBurger.active .basculant::before, .menuBurger.active .basculant::after{
+    position: absolute;
+    top: 50%;
+    background-color: #3C9DFB;
+    transform: rotate(135deg);
+}
+.menuBurger.active .basculant::after {
+    transform: rotate(-135deg);
+    margin-top: 0;
+}/*Mise en  place appear dissapear Media Query
+On va priviliégier des tailles relatives plutoit  que fixes pour le responsive
+donc les % et vh, vw, rem et em plutot que px
+*/
+
+/* ----------------------- FIN MENU BURGER ----------------*/
+
+
+/*------------------media Query-----------------/
+  /On peut ecrire min-width ou max-width personnellement je prefere le max/
+  /EXEMPLE/
+  /Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px 
+        @media screen and (max-width: 1280px)
+    Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px 
+        @media all and (min-width: 1024px) and (max-width: 1280px)
+    Sur tous types d'écrans orientés verticalement 
+        @media all and (orientation: portrait)
+        REGARDER le overflow : scroll ,pour un texte qui dépasse de sa boite parent*/
+ @media screen and (max-width: 800px) {
+            .monHeader{
+                display: none;
+            }
+            .menu-burger{
+                display: block;
+            }
+            .block1{
+                display: flex;
+                flex-direction: column-reverse;
+                max-width: 100%;
+                margin: auto;
+                padding: auto;
+                /* border: 2px solid black; */
+            }
+            .block2{
+               display: flex;
+               flex-direction: column;
+               max-width: 100%;
+               margin: auto;
+               padding: auto;
+
+            }
+            .sondage{
+                display: flex
+    
+            }
+            button{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid grey;
+                background-color: rgb(198, 110, 110);
+                color: rgb(16, 16, 16);
+                font-size: 20px;
+            }
+            button:hover{
+                background-color: rgb(255, 148, 148);
+                cursor: pointer;
+            }
+        }

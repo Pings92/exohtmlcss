@@ -8,41 +8,52 @@
   </head>
   <body>
     <header>
-      <div class="monHeader">
-        <div>
-          <a href="../index.html"
-            ><img
-              class="logo"
-              src="../images/coffee-bean.png"
-              alt="Cerveau en pleine réflexion"
-          /></a>
+        <div class="monHeader">
+          <div>
+            <a href="../index.html">
+              <img class="logo" src="../images/coffee-bean.png" alt="Cerveau en pleine réflexion"/>
+            </a>
+          </div>
+          <div>
+            <nav class="menuPrincipal">
+              <ul class="link">
+                <li><a href="../links/coffee.html" class="hover-reveal-coffee">Café</a> </li>
+                <li><a href="../links/tea.html" class="hover-reveal-tea">Thé et Maté <i class="fa-duotone fa-light fa-coffee-bean"></i> </a> </li>
+                <li> <a href="../links/energydrinks.html" class="hover-reveal-energydrinks">Boisson énergisante</a > </li>
+                <li> <a href="../links/apropos.html" class="hover-reveal">A propos</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div>
+            <img class="loginIcon" src="../images/login.png" alt="Icone de login"/>
+          </div>
+        </div>
+        <div class="menu-burger">
+          <div>
+            <a href="../index.html">
+              <img class="logo" src="../images/coffee-bean.png" alt="Cerveau en pleine réflexion"/>
+            </a>
+          </div>          
+            <nav>
+              <div class="navigation">
+                <ul class="navLink">
+                  <li><a href="../links/coffee.html" class="hover-reveal-coffee">Café</a> </li>
+                  <li><a href="../links/tea.html" class="hover-reveal-tea">Thé et Maté <i class="fa-duotone fa-light fa-coffee-bean"></i> </a> </li>
+                  <li> <a href="../links/energydrinks.html" class="hover-reveal-energydrinks">Boisson énergisante</a > </li>
+                  <li> <a href="../links/apropos.html" class="hover-reveal">A propos</a></li>
+                </ul>
+                <div class="basculant"></div>
+              </div>
+            </nav>
+          <div>
+            <img class="loginIcon" src="../images/login.png" alt="Icone de login"/>
+          </div>
         </div>
 
-        <div>
-          <nav class="menuPrincipal">
-            <ul class="link">
-              <li><a href="../links/coffee.html">Café</a></li>
-              <li><a href="#">Thé et Maté</a></li>
-              <li><a href="#">Boisson énergisante</a></li>
-              <li><a href="links/apropos.html">A propos</a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="hoverLoginMenu">
-          <img
-            class="loginIcon"
-            src="../images/login.png"
-            alt="Icone de login"
-          />
-          <!-- <ul class="loginList">
-                <li>Se connecter</li>
-                <li>Créer un compte</li>
-                <li>Mot de passe oublié</li>
-              </ul> -->
-        </div>
-      </div>
     </header>
+
+    <main>
     <h1>A propos</h1>
     <h2>Decouvrez notre univers</h2>
     <!-- <p>
@@ -55,25 +66,24 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/iqjLbIJOMlw?si=0ADlwMWH49io_LM3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"><iframe src="https://geo.dailymotion.com/player.html?video=x9xf47g"style="width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden; border:none;"allowfullscreentitle="Dailymotion Video Player"allow="web-share"></iframe></div>
     </p> -->
-    <main>
       <section class="formulaire">
-        <div>
+        <!-- <div>
           <p>Nous contacter</p>
           <p>
             Pour toute question, n'hésitez pas à nous contacter à l'adresse
             suivante :
           </p>
-        </div>
+        </div> -->
 
-        <div>
-          <fieldset>
+        <div >
+          <fieldset class="sondage">
             <form action="" method="get">
               <label for="Prénom">Votre prénom</label>
-              <input type="text" name="prenom" id="prenom" />
+              <input type="text" name="prenom" id="prenom" /> <br>
               <label for="Mail">Votre mail</label>
-              <input type="text" name="mail" id="mail" />
+              <input type="text" name="mail" id="mail" /><br>
               <label for="commentaire">Votre commentaire</label>
-              <input type="text" name="commentaire" id="commentaire" />
+              <input type="text" name="commentaire" id="commentaire" /><br>
               <button type="submit">Envoyer</button>
             </form>
           </fieldset>
