@@ -328,12 +328,13 @@ donc les % et vh, vw, rem et em plutot que px
                 display: flex;
                 border: 5px solid black;
                 height: 50px;
-                width: 30%;
+                width: 50%;
+                /* justify-content: center; */
             };
 
             .footer-content{
                 display:flex;
-                flex-direction: column;
+                flex-direction: column-reverse;
                 align-items: center;
                 font-size: 20px;
             }
@@ -342,5 +343,7 @@ donc les % et vh, vw, rem et em plutot que px
             }
             .copyright{
                 border-top: none;
+                margin-top: 50px;
             }
+
         }

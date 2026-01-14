@@ -109,7 +109,13 @@ text-align:center;
 padding-top: 20px;
 padding-bottom: 10px;
 }
-
+.titre-sondage{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 1000;
+    padding-top: 10px;
+}
 .largeDisplayContent p{
     font-size: 18px;
     width: 70%;
@@ -141,6 +147,9 @@ button:hover{
 image:hover{
     transform: scale(1.1);
     transition: all 0.5s;
+}
+.questionnaire{
+    background-color: cornsilk;
 }
 
 /* ---------------------MENU BURGER----------------- */
@@ -252,25 +261,15 @@ donc les % et vh, vw, rem et em plutot que px
             .menu-burger{
                 display: block;
             }
-            .block1{
-                display: flex;
-                flex-direction: column-reverse;
-                max-width: 100%;
-                margin: auto;
-                padding: auto;
-                /* border: 2px solid black; */
+            .loginIcon{
+                display: none;
             }
-            .block2{
-               display: flex;
-               flex-direction: column;
-               max-width: 100%;
-               margin: auto;
-               padding: auto;
 
-            }
             .sondage{
-                display: flex
-    
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                /* align-items: center; */
             }
             button{
                 margin-top: 10px;
@@ -286,4 +285,22 @@ donc les % et vh, vw, rem et em plutot que px
                 background-color: rgb(255, 148, 148);
                 cursor: pointer;
             }
+            .navigation{
+            height: 50px;
+            }
+
+            .footer-content{
+                display:flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                font-size: 20px;
+            }
+            .logoCoffee{
+                display: none;
+            }
+            .copyright{
+                border-top: none;
+                margin-top: 50px;
+            }
+
         }
